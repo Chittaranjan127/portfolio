@@ -257,6 +257,28 @@ main.fillHeight {
     padding: 0 25px;
   }
 }
+.mob-only{
+  display: none;
+}
+
+@media (max-width:960px){
+  .cZslOS{
+    display: none !important;
+  }
+  .mob-only{
+    display: block;
+    padding: 0px 40px;
+    margin-top: 20rem;
+  }
+}
+
+.ref-link{
+  display: inline-block;
+  position: relative;
+  color: var(--green);
+  transition: var(--transition);
+}
+
 section {
   margin: 0 auto;
   padding: 100px 0;
