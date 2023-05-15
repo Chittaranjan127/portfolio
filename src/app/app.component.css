@@ -744,3 +744,223 @@ p:last-child, p:last-of-type {
   font-size: var(--fz-xxs);
   line-height: 1;
 }
+
+/* something i have built section */
+.gvznfB:not(:last-of-type) {
+  margin-bottom: 100px;
+}
+.gvznfB {
+  position: relative;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  -webkit-box-align: center;
+  align-items: center;
+}
+.gvznfB:nth-of-type(2n+1) .project-content {
+  grid-column: 7 / -1;
+  text-align: right;
+}
+.gvznfB .project-content {
+  position: relative;
+  grid-area: 1 / 1 / -1 / 7;
+}
+.gvznfB .project-overline {
+  margin: 10px 0px;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+  font-weight: 400;
+}
+p:last-child, p:last-of-type {
+  margin: 0px;
+}
+@media (min-width: 768px){
+  .gvznfB .project-title {
+    margin: 0px 0px 20px;
+  }
+}
+.gvznfB .project-title {
+  color: var(--lightest-slate);
+  font-size: clamp(24px, 5vw, 28px);
+}
+.dnNJYD a {
+  position: relative;
+  z-index: 1;
+}
+.gvznfB .project-description {
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  transition: var(--transition);
+  position: relative;
+  z-index: 2;
+  padding: 25px;
+  border-radius: var(--border-radius);
+  background-color: var(--light-navy);
+  color: var(--light-slate);
+  font-size: var(--fz-lg);
+}
+p:last-child, p:last-of-type {
+  margin: 0px;
+}
+.gvznfB .project-description a {
+  display: inline-block;
+  position: relative;
+  color: var(--green);
+  transition: var(--transition);
+}
+@media (prefers-reduced-motion: no-preference){
+  .gvznfB .project-description a::after {
+    transition: var(--transition);
+  }
+}
+.gvznfB .project-description a::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 1px;
+  position: relative;
+  bottom: 0.37em;
+  background-color: var(--green);
+  opacity: 0.5;
+}
+.gvznfB:nth-of-type(2n+1) .project-tech-list {
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+}
+.gvznfB .project-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+  margin: 25px 0px 10px;
+  padding: 0px;
+  list-style: none;
+}
+.gvznfB:nth-of-type(2n+1) .project-tech-list li {
+  margin: 0px 0px 5px 20px;
+}
+.gvznfB .project-tech-list li {
+  margin: 0px 20px 5px 0px;
+  color: var(--light-slate);
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+  white-space: nowrap;
+}
+.gvznfB:nth-of-type(2n+1) .project-links {
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  margin-left: 0px;
+  margin-right: -10px;
+}
+.gvznfB .project-links {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+  margin-left: -10px;
+  color: var(--lightest-slate);
+}
+.gvznfB .project-links a {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 10px;
+}
+.gvznfB .project-links a svg {
+  width: 20px;
+  height: 20px;
+}
+svg.feather {
+  fill: none;
+}
+.gvznfB .project-links a.external svg {
+  width: 22px;
+  height: 22px;
+  margin-top: -4px;
+}
+.gvznfB:nth-of-type(2n+1) .project-image {
+  grid-column: 1 / 8;
+}
+.gvznfB .project-image {
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  transition: var(--transition);
+  grid-area: 1 / 6 / -1 / -1;
+  position: relative;
+  z-index: 1;
+}
+.gvznfB .project-image a {
+  width: 100%;
+  height: 100%;
+  background-color: var(--green);
+  border-radius: var(--border-radius);
+  vertical-align: middle;
+}
+.dnNJYD a {
+  position: relative;
+  z-index: 1;
+}
+.gvznfB .project-image a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0px;
+  z-index: 3;
+  transition: var(--transition);
+  background-color: var(--navy);
+  mix-blend-mode: screen;
+}
+.gvznfB .project-image .img {
+  border-radius: var(--border-radius);
+  mix-blend-mode: multiply;
+  filter: grayscale(100%) contrast(1) brightness(90%);
+}
+img, svg, .gatsby-image-wrapper {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.gatsby-image-wrapper-constrained {
+  display: inline-block;
+}
+.gatsby-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+img[alt=""], img:not([alt]) {
+  filter: blur(5px);
+}
+.gatsby-image-wrapper img {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  max-width: none;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  object-fit: cover;
+}
+.gatsby-image-wrapper [data-main-image] {
+  opacity: 0;
+  transform: translateZ(0);
+  transition: opacity .25s linear;
+  will-change: opacity;
+}
+.gvznfB .project-image a:hover, .gvznfB .project-image a:focus {
+  background: transparent;
+  outline: 0px;
+}
+.gvznfB .project-image a:hover::before, .gvznfB .project-image a:focus::before, .gvznfB .project-image a:hover .img, .gvznfB .project-image a:focus .img {
+  background: transparent;
+  filter: none;
+}
+.gvznfB .project-image a:hover, .gvznfB .project-image a:focus {
+  background: transparent;
+  outline: 0px;
+}
