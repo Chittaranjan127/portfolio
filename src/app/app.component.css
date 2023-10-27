@@ -392,8 +392,8 @@ main.fillHeight {
 .lbrXps .wrapper .img {
   position: relative;
   border-radius: var(--border-radius);
-  mix-blend-mode: multiply !important;
-  filter: grayscale(100%) contrast(1) !important;
+  mix-blend-mode: multiply;
+  filter: grayscale(100%) contrast(1);
   transition: var(--transition);
 }
 img,

@@ -257,22 +257,22 @@ main.fillHeight {
     padding: 0 25px;
   }
 }
-.mob-only{
+.mob-only {
   display: none;
 }
 
-@media (max-width:960px){
-  .cZslOS{
+@media (max-width: 960px) {
+  .cZslOS {
     display: none !important;
   }
-  .mob-only{
+  .mob-only {
     display: block;
     padding: 0px 40px;
     margin-top: 20rem;
   }
 }
 
-.ref-link{
+.ref-link {
   display: inline-block;
   position: relative;
   color: var(--green);
@@ -598,6 +598,6 @@ p > a:focus-visible {
   opacity: 0;
   transition: opacity 300ms var(--easing);
 }
-.hide-elem{
-    display: none;
+.hide-elem {
+  display: none;
 }
